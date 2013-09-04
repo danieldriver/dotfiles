@@ -1,11 +1,11 @@
 Dotfiles
 ========
 
-This repository holds my settings for the command line prompt, Git,
-LaTeX, Vim, and other such tools. I keep them in a local Projects
-directory, in `~/Projects/dotfiles/`, and track changes in my public
-[github repo](https://github.com/danieldriver/dotfiles). Getting the
-latest version is a simple matter of issuing `git pull`.
+This repository holds my settings for the Bourne-again shell, Git,
+LaTeX, Vim, and other command-line tools. I keep them in a local
+Projects directory (`~/Projects/dotfiles/`) and track the public repo on
+[github](https://github.com/danieldriver/dotfiles). Getting the latest
+version is a simple matter of issuing `git pull`.
 
 The files include a setup script based on the simple one by [Michael
 Smalley](https://github.com/michaeljsmalley/dotfiles), which creates
@@ -34,7 +34,7 @@ above, I have drawn on:
 [drew]: http://vimcasts.org/episodes/archive
 
 In Vim I consciously avoid the overuse of plugins -- let me exhaust its
-internal funcationality first! -- and so use neither vim-pathogen nor vundle.
+internal functionality first! -- and so use neither vim-pathogen nor vundle.
 Still, the following scripts ease my work in useful ways:
 
 * [Align and AlignMaps](http://www.vim.org/scripts/script.php?script_id=294), by Charles Campbell
