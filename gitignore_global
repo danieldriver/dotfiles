@@ -26,4 +26,4 @@
 
 # Vim files #
 *.swp
-
+.netrwhist
