@@ -40,8 +40,8 @@ Still, the following scripts ease my work in useful ways:
 * [Align and AlignMaps](http://www.vim.org/scripts/script.php?script_id=294), by Charles Campbell
 * [LaTeX Box](https://github.com/LaTeX-Box-Team/LaTeX-Box), by David Munger et al
 * [Tabular](https://github.com/godlygeek/tabular), by Matt Wozniski
-* [vim-pandoc](https://github.com/vim-pandoc/vim-pandoc), by David Sanson
 * [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized), by Ethan Schoonover
+* [vim-pandoc](https://github.com/vim-pandoc/vim-pandoc), by David Sanson
 
 Installation
 ------------
