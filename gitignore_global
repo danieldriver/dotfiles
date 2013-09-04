@@ -1,0 +1,29 @@
+# Setup: $ git config --global core.excludesfile ~/.gitignore_global
+
+# LaTeX files #
+*.aux
+*.bbl
+*.blg
+*.glo
+*.gls
+*.glg
+*.idx
+*.ind
+*.ilg
+*.lof
+*.log
+*.lot
+*.out
+*.pdf
+*.synctex.gz
+*.toc
+
+# OS X files #
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Vim files #
+*.swp
+
