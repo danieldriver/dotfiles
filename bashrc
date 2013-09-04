@@ -41,7 +41,7 @@ alias -- -="cd -"
 alias db="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias pj="cd ~/Projects"
+alias pj="cd ~/Projects ; mvim ."
 
 # BBEdit
 alias bb="bbedit ."
