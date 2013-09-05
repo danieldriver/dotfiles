@@ -68,7 +68,7 @@ set guifont=Source\ Code\ Pro:h12,Menlo:h12
 " 4. User Interface
 " ============================================================================
 set number                " show line numbers
-set cursorline            " highlight current line
+set cursorline            " highlight the current line
 set nohlsearch            " suppress highlighting of last search results
 set incsearch             " but do highlight while typing a search command
 set ignorecase            " make searches case-insensitive
@@ -97,15 +97,16 @@ set shiftwidth=4          " indent by 4 columns as well (with > and <)
 set autoindent            " copy current indent on new lines
 set expandtab             " use spaces instead of tabs
 
-" wrap text as appropriate: vimcasts.org/episodes/soft-wrapping-text/
-set wrap linebreak nolist " start by soft wrapping text
-" and toggle wrapping sets on the fly with: `Nowrap`, `Wrap` and `Hard`
+set formatprg=par         " hard wrap paragraphs with par (even in wrap mode)
+set wrap linebreak nolist " soft wrap lines by default, and toggle
+" wrapping sets on the fly: vimcasts.org/episodes/soft-wrapping-text/
 command! -nargs=* Nowrap set nowrap tw=0 go+=b
 command! -nargs=* Wrap set wrap linebreak nolist tw=0 go-=b
 command! -nargs=* Hard set nowrap tw=72 go-=b
-set listchars+=extends:>,precedes:< " show overlong lines in nowrap mode
+" finally, show overlong lines when nowrap is set
+set listchars+=extends:>,precedes:<
 set sidescroll=5          " and pad horizontal scrolling
 
-" toggle spell checking
+" toggle spell checking with \s
 nmap <silent> <leader>s :set spell!<CR>
 set spelllang=en_ca       " set spelling region
