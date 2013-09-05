@@ -95,16 +95,15 @@ ino <right> <Nop>
 set tabstop=4             " set the default tabstop to 4 instead of 8
 set softtabstop=4         " unify: vimcasts.org/episodes/tabs-and-spaces/
 set shiftwidth=4          " indent by 4 columns as well (with > and <)
-set shiftround            " round indents to the nearest tabstop
 set autoindent            " copy current indent on new lines
 set expandtab             " use spaces instead of tabs
 
 " wrap text as appropriate: vimcasts.org/episodes/soft-wrapping-text/
 set wrap linebreak nolist " start by soft wrapping text
 " and toggle wrapping sets on the fly with: `Nowrap`, `Wrap` and `Hard`
-command! -nargs=* Nowrap set nowrap tw=0 fo-=a go+=b
-command! -nargs=* Wrap set wrap linebreak nolist tw=0 fo-=a go-=b
-command! -nargs=* Hard set nowrap tw=72 fo+=a go-=b
+command! -nargs=* Nowrap set nowrap tw=0 go+=b
+command! -nargs=* Wrap set wrap linebreak nolist tw=0 go-=b
+command! -nargs=* Hard set nowrap tw=72 go-=b
 set listchars+=extends:>,precedes:< " show overlong lines in nowrap mode
 set sidescroll=5          " and pad horizontal scrolling
 
