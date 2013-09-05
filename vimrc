@@ -73,8 +73,7 @@ set nohlsearch            " suppress highlighting of last search results
 set incsearch             " but do highlight while typing a search command
 set ignorecase            " make searches case-insensitive
 set smartcase             " unless the search contains Uppercase Chars
-let loaded_matchparen=1   " do not highlight matching brackets
-set showmatch             " but jump to a matching bracket once when inserted
+hi MatchParen guibg=#eee8d5 guifg=#cb4b16 " mute colors of matching brackets
 set ruler                 " show cursor position and relative page position
 set laststatus=2          " last window always has a statusline
 set statusline=%<%f\%h%m%r%=%-20.(line=%l\ \ col=%c%V\ \ totlin=%L%)\ \ \%h%m%r%=%-40(bytval=0x%B,%n%Y%)\%P
