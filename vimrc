@@ -29,7 +29,7 @@ if has("autocmd")
     au FileType yaml setlocal ts=2 sts=2 sw=2 et
 endif
 
-" strip trailing spaces: vimcasts.org/episodes/tidying-whitespace/
+" strip trailing spaces: vimcasts.org/e/4
 function! <SID>StripTrailingSpaces()
     let _s=@/
     let l = line(".")
@@ -88,18 +88,25 @@ ino <down> <Nop>
 ino <left> <Nop>
 ino <right> <Nop>
 
+" edit files relative to the working directory: vimcasts.org/e/14
+cnoremap %% <C-R>=fnameescape(expand('%:h')).'/'<cr>
+map <leader>ew :e %%
+map <leader>es :sp %%
+map <leader>ev :vsp %%
+map <leader>et :tabe %%
+
 " ============================================================================
 " 5. Text Formatting
 " ============================================================================
 set tabstop=4             " set the default tabstop to 4 instead of 8
-set softtabstop=4         " unify: vimcasts.org/episodes/tabs-and-spaces/
+set softtabstop=4         " unify tabs and spaces: vimcasts.org/e/2
 set shiftwidth=4          " indent by 4 columns as well (with > and <)
 set autoindent            " copy current indent on new lines
 set expandtab             " use spaces instead of tabs
 
 set formatprg=par         " hard wrap paragraphs with par (even in wrap mode)
-set wrap linebreak nolist " soft wrap lines by default, and toggle
-" wrapping sets on the fly: vimcasts.org/episodes/soft-wrapping-text/
+set wrap linebreak nolist " soft wrap lines by default, and:
+" toggle wrapping sets on the fly: vimcasts.org/e/16
 command! -nargs=* Nowrap set nowrap tw=0 go+=b
 command! -nargs=* Wrap set wrap linebreak nolist tw=0 go-=b
 command! -nargs=* Hard set nowrap tw=72 go-=b
