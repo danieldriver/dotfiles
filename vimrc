@@ -60,7 +60,7 @@ endif
 let &colorcolumn="80,".join(range(120,320),",") " colorize overlong lines
 
 " define how hidden characters are shown
-set listchars+=tab:▸\ ,trail:◆,eol:¬,extends:>,precedes:<
+set listchars+=tab:▸\ ,trail:◆,eol:¬,extends:>,precedes:<,nbsp:~
 " set a hierarchy of readable fonts (the first valid match is used)
 set guifont=Source\ Code\ Pro:h12,Menlo:h12
 
@@ -117,3 +117,6 @@ set sidescroll=5          " and pad horizontal scrolling
 " toggle spell checking with \s
 nmap <silent> <leader>s :set spell!<CR>
 set spelllang=en_ca       " set spelling region
+
+" find and replace non-breaking spaces
+command! -nargs=* Nonbsp %s/\%xa0/ /g
