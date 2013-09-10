@@ -69,8 +69,8 @@ set guifont=Source\ Code\ Pro:h12,Menlo:h12
 " ============================================================================
 set number                " show line numbers
 set cursorline            " highlight the current line
-set nohlsearch            " suppress highlighting of last search results
-set incsearch             " but do highlight while typing a search command
+set hlsearch              " highlight last search results
+set incsearch             " and highlight while typing a search command
 set ignorecase            " make searches case-insensitive
 set smartcase             " unless the search contains Uppercase Chars
 hi MatchParen guibg=#eee8d5 guifg=#002b36 " mute colors of matching brackets
