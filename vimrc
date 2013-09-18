@@ -16,6 +16,11 @@
 set nocompatible          " do not limit Vim to make it Vi-compatible
 set encoding=utf-8        " ensure character encoding is utf-8
 
+let mapleader = ","       " choose an alternate leader key
+
+" quickly open my .vimrc from inside vim
+nnoremap <leader>rc <C-w><C-v><C-l>:e $MYVIMRC<cr>
+
 " ============================================================================
 " 2. Events
 " ============================================================================
@@ -120,3 +125,7 @@ set spelllang=en_ca       " set spelling region
 
 " find and replace non-breaking spaces
 command! -nargs=* Nonbsp %s/\%xa0/ /g
+
+" markdown assistance
+nnoremap <leader>1 yypVr=
+nnoremap <leader>2 yypVr-
