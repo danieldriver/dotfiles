@@ -1,6 +1,7 @@
 # LaTeX files #
 *.aux
 *.bbl
+*.bcf
 *.blg
 *.glo
 *.gls
@@ -13,6 +14,7 @@
 *.lot
 *.out
 *.pdf
+*.run.xml
 *.synctex.gz
 *.toc
 
