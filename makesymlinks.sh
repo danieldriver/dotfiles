@@ -33,3 +33,8 @@ done
 
 # finally, set up git to use the global gitignore file
 git config --global core.excludesfile ~/.gitignore_global
+# and set up my git aliases while were're at it
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.cm commit
+git config --global alias.st status
