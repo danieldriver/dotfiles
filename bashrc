@@ -1,6 +1,6 @@
 # Everything in this file loads in .bash_profile as well
 
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/opt/ruby/bin:$PATH"
 export LESS='-arM' # -r protects against -R, which makes git diff output look ESC[goofy
 
 export HISTSIZE=10000                    # 500 is default
