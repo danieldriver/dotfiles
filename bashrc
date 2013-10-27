@@ -9,10 +9,6 @@ export HISTTIMEFORMAT='%b %d %I:%M %p '  # using strftime format
 export HISTCONTROL=ignoreboth            # ignoredups:ignorespace
 export HISTIGNORE="history:h:pwd:exit:ls:ls *:ll:lt:la:lat"
 
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  source $(brew --prefix)/etc/bash_completion
-fi
-
 # GREP_COLOR codes
 # Attributes:   Text color:    Background:
 #   0 reset all   30 black       40 black
