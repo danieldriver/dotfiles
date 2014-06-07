@@ -1,0 +1,96 @@
+% Standard Reading Quiz, Version 1.0
+% !TEX encoding = UTF-8 Unicode
+% !TEX TS-program = XeLaTeX
+
+\documentclass[%
+%11pt,
+%answers,
+addpoints]{exam}
+
+% Typography
+\usepackage{fontspec,realscripts}
+\defaultfontfeatures{Ligatures=TeX}
+\setromanfont[Numbers=OldStyle]{Scala OT}
+\setsansfont[Numbers=OldStyle]{Scala Sans Pro}
+\frenchspacing
+
+% Quiz points and answers
+\pointsinmargin
+\marginbonuspointname{ free}
+\unframedsolutions
+\SolutionEmphasis{\sffamily}
+\renewcommand{\solutiontitle}{}
+%\renewcommand{\solutiontitle}{\noindent\textsc{answer:}\enspace}
+
+% Custom local commands
+\newcommand\Lord{\textsc{Lord}}
+
+\begin{document}
+
+% Quiz metadata and student name
+\parbox{3in}{\raggedright
+	\textsc{bsth} 310: Reading Quiz tk
+	\par Dr. Driver, #DATETIME d MMMM yyyy#}
+\hfill
+\parbox{3in}{\raggedleft
+	\ifprintanswers
+		\textbf{Answer Key}
+	\else
+		Full name:\enspace\hrulefill
+	\fi
+	\par This quiz is worth a total of \numpoints\ points.}
+
+% Directions
+\begin{center}
+\parbox{5.5in}{\centering\itshape
+	Answer each of the following questions in one or two complete
+	sentences.}
+\end{center}
+
+\begin{questions}
+
+\question[2]
+	tk
+
+	\begin{solution}[\stretch{1}]
+		tk
+	\end{solution}
+
+\question[2]
+	tk
+
+	\begin{solution}[\stretch{1}]
+		tk
+	\end{solution}
+
+\question[2]
+	tk
+
+	\begin{solution}[\stretch{1}]
+		tk
+	\end{solution}
+
+\question[2]
+	tk
+
+	\begin{solution}[\stretch{1}]
+		tk
+	\end{solution}
+
+\question[2]
+	tk
+
+	\begin{solution}[\stretch{1}]
+		tk
+	\end{solution}
+
+\bonusquestion[2]
+	tk
+
+	\begin{solution}[\stretch{1}]
+		tk
+	\end{solution}
+
+\newpage
+\end{questions}
+\end{document}
