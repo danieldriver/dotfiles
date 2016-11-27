@@ -6,7 +6,7 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # A git-savvy bash prompt from Nicolas Gallagher in the form:
-# 
+#
 # user@host: ~/Projects/dotfiles on master[+!?$]
 # $
 #
@@ -128,3 +128,4 @@ PS1+="${style_path}\w" # Working directory
 PS1+="\$(prompt_git)" # Git details
 PS1+="\n" # Newline
 PS1+="${style_chars}\$ \[${RESET}\]" # $ (and reset color)
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
