@@ -37,15 +37,16 @@ alias -- -="cd -"
 alias db="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias pj="cd ~/Projects ; mvim ."
+alias pj="cd ~/Projects ; la"
 
 # BBEdit
 alias bb="bbedit ."
 alias bd="bbdiff"
 alias bf="bbfind"
+alias br="bbresults"
 
 # List dir contents aliases (cf http://ss64.com/osx/ls.html)
-alias ll="ls -oG"       # Long form no user group, color
+alias l="ls -oG"        # Long form no user group, color
 alias lt="ls -toG"      # Order by last modified, long form no user group, color
 alias la="ls -AGFoh"    # List all except . and .., color, mark file types, long form no user group, human file size
 alias lat="ls -AGFoht"  # List all except . and .., color, mark file types, long form no user group, human file size, order by last modified
