@@ -40,7 +40,7 @@ alias dt="cd ~/Desktop"
 alias pj="cd ~/Projects ; la"
 
 # BBEdit
-alias bb="bbedit ."
+alias bb="bbedit"
 alias bd="bbdiff"
 alias bf="bbfind"
 alias br="bbresults"
